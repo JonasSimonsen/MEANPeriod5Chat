@@ -1,0 +1,29 @@
+doctype html
+head
+    title= "Socket.io chat"
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='/js/main.js')
+    script(src='/socket.io/socket.io.js')
+body
+    .container
+        .row
+            .col-md-8
+                #userFormWrap
+                    h1 Username
+                    form#userForm
+                        input#username.form-control(type='text', placeholder='...')
+                        br
+                        button.btn.btn-default(type='submit') Submit
+                #mainWrap
+
+                    form#chatForm
+                        .form-group
+                        textarea#chatInput.form-control(name='body', placeholder='...')
+                        br
+                        button.btn.btn-default(type='submit') Submit
+                    br
+                    #chatWindow.well
+            .col-md-4
+                h3 Online Users
+                ul.list-group
+                    #users

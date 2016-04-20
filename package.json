@@ -1,0 +1,13 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "darwin": "0.0.5",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "mongoose": "^4.4.12",
+    "socket.io": "^1.4.5"
+  }
+}
